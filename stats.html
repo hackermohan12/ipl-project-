@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2025 Stats - Cricket Insight Nepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Cricket Insight Nepal</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">IPL <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#schedule">Schedule</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="points-table.html">Points Table</a></li>
+                            <li><a href="stats.html" class="active">Stats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#live-scores">Live Scores</a></li>
+                    <li><a href="index.html#blogs">Blogs</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="photos.html">Photos</a></li>
+                            <li><a href="rankings.html">Rankings</a></li>
+                            <li><a href="fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <button class="login-btn">Login</button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for news, matches, players...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>IPL 2025 Stats</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="#">IPL</a> / <span>Stats</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="table-filters">
+                <div class="season-selector">
+                    <label for="season">Season:</label>
+                    <select id="season">
+                        <option value="2025" selected>IPL 2025</option>
+                        <option value="2024">IPL 2024</option>
+                        <option value="2023">IPL 2023</option>
+                        <option value="2022">IPL 2022</option>
+                        <option value="2021">IPL 2021</option>
+                    </select>
+                </div>
+                <div class="group-selector">
+                    <button class="group-btn active" data-group="batting">Batting</button>
+                    <button class="group-btn" data-group="bowling">Bowling</button>
+                    <button class="group-btn" data-group="all-round">All-Round</button>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <h3>Most Runs</h3>
+                    </div>
+                    <div class="stats-body">
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">1</span>
+                                    <div>
+                                        <div class="player-name">Virat Kohli</div>
+                                        <div class="player-team">RCB</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">532</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">2</span>
+                                    <div>
+                                        <div class="player-name">KL Rahul</div>
+                                        <div class="player-team">LSG</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">498</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">3</span>
+                                    <div>
+                                        <div class="player-name">Shubman Gill</div>
+                                        <div class="player-team">GT</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">475</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">4</span>
+                                    <div>
+                                        <div class="player-name">Ruturaj Gaikwad</div>
+                                        <div class="player-team">CSK</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">456</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">5</span>
+                                    <div>
+                                        <div class="player-name">Faf du Plessis</div>
+                                        <div class="player-team">RCB</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">432</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <h3>Most Wickets</h3>
+                    </div>
+                    <div class="stats-body">
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">1</span>
+                                    <div>
+                                        <div class="player-name">Jasprit Bumrah</div>
+                                        <div class="player-team">MI</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">24</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">2</span>
+                                    <div>
+                                        <div class="player-name">Yuzvendra Chahal</div>
+                                        <div class="player-team">RR</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">22</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">3</span>
+                                    <div>
+                                        <div class="player-name">Mohammed Shami</div>
+                                        <div class="player-team">GT</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">21</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">4</span>
+                                    <div>
+                                        <div class="player-name">Rashid Khan</div>
+                                        <div class="player-team">GT</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">19</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">5</span>
+                                    <div>
+                                        <div class="player-name">T Natarajan</div>
+                                        <div class="player-team">SRH</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">18</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <h3>Highest Scores</h3>
+                    </div>
+                    <div class="stats-body">
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">1</span>
+                                    <div>
+                                        <div class="player-name">Jos Buttler</div>
+                                        <div class="player-team">RR vs KKR</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">124*</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">2</span>
+                                    <div>
+                                        <div class="player-name">KL Rahul</div>
+                                        <div class="player-team">LSG vs RCB</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">118</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">3</span>
+                                    <div>
+                                        <div class="player-name">Virat Kohli</div>
+                                        <div class="player-team">RCB vs SRH</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">113*</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">4</span>
+                                    <div>
+                                        <div class="player-name">Shubman Gill</div>
+                                        <div class="player-team">GT vs MI</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">104</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">5</span>
+                                    <div>
+                                        <div class="player-name">Sanju Samson</div>
+                                        <div class="player-team">RR vs CSK</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">102*</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <h3>Best Bowling Figures</h3>
+                    </div>
+                    <div class="stats-body">
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">1</span>
+                                    <div>
+                                        <div class="player-name">Jasprit Bumrah</div>
+                                        <div class="player-team">MI vs RCB</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">5/10</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">2</span>
+                                    <div>
+                                        <div class="player-name">Harshal Patel</div>
+                                        <div class="player-team">RCB vs PBKS</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">5/17</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">3</span>
+                                    <div>
+                                        <div class="player-name">Yuzvendra Chahal</div>
+                                        <div class="player-team">RR vs KKR</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">4/15</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">4</span>
+                                    <div>
+                                        <div class="player-name">Mohammed Shami</div>
+                                        <div class="player-team">GT vs DC</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">4/21</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">5</span>
+                                    <div>
+                                        <div class="player-name">Rashid Khan</div>
+                                        <div class="player-team">GT vs LSG</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">4/24</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <h3>Most Sixes</h3>
+                    </div>
+                    <div class="stats-body">
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">1</span>
+                                    <div>
+                                        <div class="player-name">Nicholas Pooran</div>
+                                        <div class="player-team">LSG</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">32</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">2</span>
+                                    <div>
+                                        <div class="player-name">Jos Buttler</div>
+                                        <div class="player-team">RR</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">29</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">3</span>
+                                    <div>
+                                        <div class="player-name">Liam Livingstone</div>
+                                        <div class="player-team">PBKS</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">27</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">4</span>
+                                    <div>
+                                        <div class="player-name">Hardik Pandya</div>
+                                        <div class="player-team">GT</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">25</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">5</span>
+                                    <div>
+                                        <div class="player-name">MS Dhoni</div>
+                                        <div class="player-team">CSK</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">24</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <h3>Highest Strike Rates</h3>
+                    </div>
+                    <div class="stats-body">
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">1</span>
+                                    <div>
+                                        <div class="player-name">Sunil Narine</div>
+                                        <div class="player-team">KKR</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">192.45</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">2</span>
+                                    <div>
+                                        <div class="player-name">Nicholas Pooran</div>
+                                        <div class="player-team">LSG</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">187.32</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">3</span>
+                                    <div>
+                                        <div class="player-name">Tim David</div>
+                                        <div class="player-team">MI</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">185.67</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">4</span>
+                                    <div>
+                                        <div class="player-name">Dinesh Karthik</div>
+                                        <div class="player-team">RCB</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">183.21</span>
+                            </li>
+                            <li class="stats-item">
+                                <div class="player-info">
+                                    <span class="player-rank">5</span>
+                                    <div>
+                                        <div class="player-name">MS Dhoni</div>
+                                        <div class="player-team">CSK</div>
+                                    </div>
+                                </div>
+                                <span class="player-stat">182.56</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cricket Insight Nepal</h3>
+                    <p>Your ultimate destination for cricket updates, live scores, and match details.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#schedule">IPL Schedule</a></li>
+                        <li><a href="index.html#live-scores">Live Scores</a></li>
+                        <li><a href="index.html#blogs">Blogs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#schedule">IPL 2025</a></li>
+                        <li><a href="rankings.html">T20 World Cup</a></li>
+                        <li><a href="rankings.html">Test Cricket</a></li>
+                        <li><a href="index.html#blogs">Cricket News</a></li>
+                        <li><a href="teams.html">Player Profiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> info@cricketinsightnepal.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cricket Insight Nepal. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login-modal">
+            <span class="close-button login-close">&times;</span>
+            <div class="login-container">
+                <div class="login-tabs">
+                    <button class="login-tab active" data-tab="login">Login</button>
+                    <button class="login-tab" data-tab="register">Register</button>
+                </div>
+                <div class="login-form-container active" id="login-tab">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <button type="submit" class="login-submit">Login</button>
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-form-container" id="register-tab">
+                    <form class="register-form">
+                        <div class="form-group">
+                            <label for="register-name">Full Name</label>
+                            <input type="text" id="register-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password">Confirm Password</label>
+                            <input type="password" id="register-confirm-password" required>
+                        </div>
+                        <div class="form-group terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                        </div>
+                        <button type="submit" class="register-submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

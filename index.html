@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Insight Nepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Cricket Insight Nepal</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">IPL <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="points-table.html">Points Table</a></li>
+                            <li><a href="stats.html">Stats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#live-scores">Live Scores</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="photos.html">Photos</a></li>
+                            <li><a href="rankings.html">Rankings</a></li>
+                            <li><a href="fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <button class="login-btn">Login</button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for news, matches, players...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Your Ultimate Cricket Destination</h2>
+            <p>Get real-time updates, match schedules, and in-depth analysis</p>
+            <a href="#live-scores" class="cta-button">Live Scores</a>
+        </div>
+    </section>
+
+    <section id="live-scores" class="live-scores">
+        <div class="container">
+            <h2>Live Scores</h2>
+            <div class="score-cards" id="scoreCards">
+                <div class="loading">Loading real-time data...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-match" class="featured-match">
+        <div class="container">
+            <h2>Featured Match</h2>
+            <div class="featured-match-banner">
+                <img src="https://sjc.microlink.io/GMnFv4emJHkeOaoseiisZoXhpyKEMih9XZjdghPwczkwXdtFrfRNNU--sQFll0rGjJSr_QyqIKpA3lGsKItQgQ.jpeg" alt="IPL 2025" class="featured-image">
+                <div class="featured-overlay">
+                    <h3>IPL 2025</h3>
+                    <p>Watch all matches live on Cricket Insight Nepal</p>
+                    <a href="#schedule" class="cta-button">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>IPL 2025 Schedule</h2>
+            <div class="schedule-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Match</th>
+                            <th>Date</th>
+                            <th>Teams</th>
+                            <th>Venue</th>
+                            <th>Time (IST)</th>
+                            <th colspan="2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scheduleBody">
+                        <!-- Schedule will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="blogs">
+        <div class="container">
+            <h2>Cricket Blogs</h2>
+            <div class="blog-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ipl">IPL</button>
+                <button class="filter-btn" data-filter="international">International</button>
+                <button class="filter-btn" data-filter="analysis">Analysis</button>
+                <button class="filter-btn" data-filter="opinion">Opinion</button>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card" data-category="ipl analysis">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="IPL Strategy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">IPL</div>
+                        <h3>IPL 2025: Team Strategies and Auction Analysis</h3>
+                        <p>A deep dive into how teams have prepared for the upcoming season and what their auction strategies reveal about their plans.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Rahul Sharma</span>
+                            <span><i class="fas fa-calendar"></i> April 1, 2025</span>
+                        </div>
+                        <a href="blog-details.html?id=1" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="international opinion">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1624880357913-a8539238245b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="World Cup">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">International</div>
+                        <h3>The Evolution of T20 Cricket: From Entertainment to Strategy</h3>
+                        <p>How T20 cricket has transformed from a purely entertainment-focused format to a complex strategic game over the years.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Anil Kumble</span>
+                            <span><i class="fas fa-calendar"></i> March 28, 2025</span>
+                        </div>
+                        <a href="blog-details.html?id=2" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="analysis">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1629285483773-6b5cde2171d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Cricket Analysis">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Analysis</div>
+                        <h3>The Science Behind Cricket: Data Analytics in Modern Cricket</h3>
+                        <p>An exploration of how data analytics and technology are revolutionizing cricket strategy, player development, and team selection.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Priya Patel</span>
+                            <span><i class="fas fa-calendar"></i> March 25, 2025</span>
+                        </div>
+                        <a href="blog-details.html?id=3" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="ipl opinion">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="IPL Impact">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Opinion</div>
+                        <h3>The Impact of IPL on Emerging Cricketers from Nepal</h3>
+                        <p>How the IPL has provided a platform for Nepali cricketers to showcase their talent and develop their skills on the global stage.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Sandeep Lamichhane</span>
+                            <span><i class="fas fa-calendar"></i> March 20, 2025</span>
+                        </div>
+                        <a href="blog-details.html?id=4" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="international analysis">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1593766788306-28561086694e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Test Cricket">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">International</div>
+                        <h3>The Future of Test Cricket in the Age of T20 Leagues</h3>
+                        <p>An analysis of how Test cricket is adapting to remain relevant in an era dominated by shorter formats and franchise leagues.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Ravi Shastri</span>
+                            <span><i class="fas fa-calendar"></i> March 15, 2025</span>
+                        </div>
+                        <a href="blog-details.html?id=5" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="ipl analysis">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="IPL Tactics">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">IPL</div>
+                        <h3>Power Play Tactics: How Teams Maximize the First Six Overs</h3>
+                        <p>A detailed analysis of different approaches teams take during the power play overs and how it impacts their overall performance.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Mahendra Singh Dhoni</span>
+                            <span><i class="fas fa-calendar"></i> March 10, 2025</span>
+                        </div>
+                        <a href="blog-details.html?id=6" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="match-details" class="match-details">
+        <div class="container">
+            <h2>Match Details</h2>
+            <div id="matchDetailsContent">
+                <p>Select a match from the schedule to view details</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest cricket news, match updates, and exclusive content delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cricket Insight Nepal</h3>
+                    <p>Your ultimate destination for cricket updates, live scores, and match details.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#schedule">IPL Schedule</a></li>
+                        <li><a href="#live-scores">Live Scores</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#schedule">IPL 2025</a></li>
+                        <li><a href="rankings.html">T20 World Cup</a></li>
+                        <li><a href="rankings.html">Test Cricket</a></li>
+                        <li><a href="#blogs">Cricket News</a></li>
+                        <li><a href="teams.html">Player Profiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> info@cricketinsightnepal.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cricket Insight Nepal. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Match Details Modal -->
+    <div id="matchModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle">Match Details</h2>
+            <div id="modalContent">
+                <iframe id="matchFrame" width="100%" height="500" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Stream Modal -->
+    <div id="liveStreamModal" class="modal">
+        <div class="modal-content live-stream-modal">
+            <span class="close-button live-stream-close">&times;</span>
+            <h2 id="liveStreamTitle">Live Stream</h2>
+            <div id="liveStreamContent">
+                <iframe id="liveStreamFrame" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login-modal">
+            <span class="close-button login-close">&times;</span>
+            <div class="login-container">
+                <div class="login-tabs">
+                    <button class="login-tab active" data-tab="login">Login</button>
+                    <button class="login-tab" data-tab="register">Register</button>
+                </div>
+                <div class="login-form-container active" id="login-tab">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <button type="submit" class="login-submit">Login</button>
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-form-container" id="register-tab">
+                    <form class="register-form">
+                        <div class="form-group">
+                            <label for="register-name">Full Name</label>
+                            <input type="text" id="register-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password">Confirm Password</label>
+                            <input type="password" id="register-confirm-password" required>
+                        </div>
+                        <div class="form-group terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                        </div>
+                        <button type="submit" class="register-submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

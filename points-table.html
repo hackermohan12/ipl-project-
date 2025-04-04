@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2025 Points Table - Cricket Insight Nepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Cricket Insight Nepal</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">IPL <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#schedule">Schedule</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="points-table.html" class="active">Points Table</a></li>
+                            <li><a href="stats.html">Stats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#live-scores">Live Scores</a></li>
+                    <li><a href="index.html#blogs">Blogs</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="photos.html">Photos</a></li>
+                            <li><a href="rankings.html">Rankings</a></li>
+                            <li><a href="fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <button class="login-btn">Login</button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for news, matches, players...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>IPL 2025 Points Table</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="#">IPL</a> / <span>Points Table</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="points-table-section">
+        <div class="container">
+            <div class="points-table-container">
+                <div class="table-filters">
+                    <div class="season-selector">
+                        <label for="season">Season:</label>
+                        <select id="season">
+                            <option value="2025" selected>IPL 2025</option>
+                            <option value="2024">IPL 2024</option>
+                            <option value="2023">IPL 2023</option>
+                            <option value="2022">IPL 2022</option>
+                            <option value="2021">IPL 2021</option>
+                        </select>
+                    </div>
+                    <div class="group-selector">
+                        <button class="group-btn active" data-group="all">All Teams</button>
+                    </div>
+                </div>
+                
+                <table class="points-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th class="team-column">Team</th>
+                            <th>P</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>NR</th>
+                            <th>Pts</th>
+                            <th>NRR</th>
+                            <th>Form</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pointsTableBody">
+                        <tr class="qualification-row">
+                            <td colspan="9">Qualification: Playoffs</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/CSK/logos/Medium/CSK.png" alt="CSK" class="team-logo">
+                                    <span>Chennai Super Kings</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>+0.652</td>
+                            <td class="form-column">
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/MI/logos/Medium/MI.png" alt="MI" class="team-logo">
+                                    <span>Mumbai Indians</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>+0.581</td>
+                            <td class="form-column">
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/logos/Medium/RCB.png" alt="RCB" class="team-logo">
+                                    <span>Royal Challengers Bangalore</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>16</td>
+                            <td>+0.390</td>
+                            <td class="form-column">
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/GT/logos/Medium/GT.png" alt="GT" class="team-logo">
+                                    <span>Gujarat Titans</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>16</td>
+                            <td>+0.301</td>
+                            <td class="form-column">
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                            </td>
+                        </tr>
+                        <tr class="qualification-row">
+                            <td colspan="9">Qualification: League Stage</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/KKR/logos/Medium/KKR.png" alt="KKR" class="team-logo">
+                                    <span>Kolkata Knight Riders</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>+0.256</td>
+                            <td class="form-column">
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RR/logos/Medium/RR.png" alt="RR" class="team-logo">
+                                    <span>Rajasthan Royals</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>+0.121</td>
+                            <td class="form-column">
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/LSG/logos/Medium/LSG.png" alt="LSG" class="team-logo">
+                                    <span>Lucknow Super Giants</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>-0.100</td>
+                            <td class="form-column">
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/SRH/logos/Medium/SRH.png" alt="SRH" class="team-logo">
+                                    <span>Sunrisers Hyderabad</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>-0.214</td>
+                            <td class="form-column">
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/DC/logos/Medium/DC.png" alt="DC" class="team-logo">
+                                    <span>Delhi Capitals</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>5</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>-0.455</td>
+                            <td class="form-column">
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="team-column">
+                                <div class="team-info">
+                                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/PBKS/logos/Medium/PBKS.png" alt="PBKS" class="team-logo">
+                                    <span>Punjab Kings</span>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>11</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>-0.532</td>
+                            <td class="form-column">
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator loss">L</span>
+                                <span class="form-indicator win">W</span>
+                                <span class="form-indicator loss">L</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="table-legend">
+                    <div class="legend-item">
+                        <span class="legend-color playoffs"></span>
+                        <span class="legend-text">Qualified for Playoffs</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="form-indicator win legend-form">W</span>
+                        <span class="legend-text">Win</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="form-indicator loss legend-form">L</span>
+                        <span class="legend-text">Loss</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="form-indicator nr legend-form">NR</span>
+                        <span class="legend-text">No Result</span>
+                    </div>
+                </div>
+                
+                <div class="table-notes">
+                    <p><strong>P:</strong> Played | <strong>W:</strong> Won | <strong>L:</strong> Lost | <strong>NR:</strong> No Result | <strong>Pts:</strong> Points | <strong>NRR:</strong> Net Run Rate</p>
+                    <p>* The top 4 teams qualify for the playoffs.</p>
+                    <p>* Teams are ranked according to points, then NRR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-matches">
+        <div class="container">
+            <h2>Recent Matches</h2>
+            <div class="recent-matches-grid">
+                <div class="match-card">
+                    <div class="match-date">May 15, 2025</div>
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/GT/logos/Medium/GT.png" alt="GT" class="team-logo">
+                            <span>GT</span>
+                        </div>
+                        <div class="match-score">
+                            <span>189/6</span>
+                            <span class="vs">vs</span>
+                            <span>192/4</span>
+                        </div>
+                        <div class="team">
+                            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/DC/logos/Medium/DC.png" alt="DC" class="team-logo">
+                            <span>DC</span>
+                        </div>
+                    </div>
+                    <div class="match-result">Delhi Capitals won by 6 wickets</div>
+                    <a href="#" class="match-link">View Scorecard</a>
+                </div>
+                
+                <div class="match-card">
+                    <div class="match-date">May 14, 2025</div>
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/SRH/logos/Medium/SRH.png" alt="SRH" class="team-logo">
+                            <span>SRH</span>
+                        </div>
+                        <div class="match-score">
+                            <span>175/8</span>
+                            <span class="vs">vs</span>
+                            <span>156/10</span>
+                        </div>
+                        <div class="team">
+                            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/logos/Medium/RCB.png" alt="RCB" class="team-logo">
+                            <span>RCB</span>
+                        </div>
+                    </div>
+                    <div class="match-result">Sunrisers Hyderabad won by 19 runs</div>
+                    <a href="#" class="match-link">View Scorecard</a>
+                </div>
+                
+                <div class="match-card">
+                    <div class="match-date">May 13, 2025</div>
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RR/logos/Medium/RR.png" alt="RR" class="team-logo">
+                            <span>RR</span>
+                        </div>
+                        <div class="match-score">
+                            <span>201/4</span>
+                            <span class="vs">vs</span>
+                            <span>184/8</span>
+                        </div>
+                        <div class="team">
+                            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/LSG/logos/Medium/LSG.png" alt="LSG" class="team-logo">
+                            <span>LSG</span>
+                        </div>
+                    </div>
+                    <div class="match-result">Rajasthan Royals won by 17 runs</div>
+                    <a href="#" class="match-link">View Scorecard</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cricket Insight Nepal</h3>
+                    <p>Your ultimate destination for cricket updates, live scores, and match details.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#schedule">IPL Schedule</a></li>
+                        <li><a href="index.html#live-scores">Live Scores</a></li>
+                        <li><a href="index.html#blogs">Blogs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#schedule">IPL 2025</a></li>
+                        <li><a href="rankings.html">T20 World Cup</a></li>
+                        <li><a href="rankings.html">Test Cricket</a></li>
+                        <li><a href="index.html#blogs">Cricket News</a></li>
+                        <li><a href="teams.html">Player Profiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> info@cricketinsightnepal.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cricket Insight Nepal. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login-modal">
+            <span class="close-button login-close">&times;</span>
+            <div class="login-container">
+                <div class="login-tabs">
+                    <button class="login-tab active" data-tab="login">Login</button>
+                    <button class="login-tab" data-tab="register">Register</button>
+                </div>
+                <div class="login-form-container active" id="login-tab">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <button type="submit" class="login-submit">Login</button>
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-form-container" id="register-tab">
+                    <form class="register-form">
+                        <div class="form-group">
+                            <label for="register-name">Full Name</label>
+                            <input type="text" id="register-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password">Confirm Password</label>
+                            <input type="password" id="register-confirm-password" required>
+                        </div>
+                        <div class="form-group terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                        </div>
+                        <button type="submit" class="register-submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
