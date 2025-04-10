@@ -1,7 +1,7 @@
 // Global variables
 const RAPIDAPI_KEY = '339b964454mshaa4ef3a00388890p177e47jsn8d7b91a3cff0'; // Your RapidAPI Key
 const RAPIDAPI_HOST = 'cricbuzz-cricket.p.rapidapi.com';
-const LIVE_STREAM_URL = 'https://yosintv3.github.io/livee/live.html?id=t20cfd';
+const LIVE_STREAM_URL = 'https://cr7tv.github.io/livee/live.html?id=t20cfd';
 let iplSchedule = [];
 
 // Initialize the application
