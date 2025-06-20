@@ -1,7 +1,7 @@
 // Global variables
 const RAPIDAPI_KEY = '339b964454mshaa4ef3a00388890p177e47jsn8d7b91a3cff0'; // Your RapidAPI Key
 const RAPIDAPI_HOST = 'cricbuzz-cricket.p.rapidapi.com';
-const LIVE_STREAM_URL = 'https://yosintv2.github.io/tv/alpha?mid=scotland-vs-nepal';
+const LIVE_STREAM_URL = 'https://linnk.pages.dev/tim?id=220c77f52471faf24fa6d694e69bd1b1';
 let iplSchedule = [];
 
 // Initialize the application
