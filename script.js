@@ -1,7 +1,7 @@
 // Global variables
 const RAPIDAPI_KEY = '339b964454mshaa4ef3a00388890p177e47jsn8d7b91a3cff0'; // Your RapidAPI Key
 const RAPIDAPI_HOST = 'cricbuzz-cricket.p.rapidapi.com';
-const LIVE_STREAM_URL = 'https://linnk.pages.dev/tim?id=220c77f52471faf24fa6d694e69bd1b1';
+const LIVE_STREAM_URL = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ls2uMe3oMto?si=NkmPCU5Sbyq1rnzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
 let iplSchedule = [];
 
 // Initialize the application
