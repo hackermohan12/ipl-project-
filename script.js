@@ -1,7 +1,7 @@
 // Global variables
 const RAPIDAPI_KEY = '339b964454mshaa4ef3a00388890p177e47jsn8d7b91a3cff0'; // Your RapidAPI Key
 const RAPIDAPI_HOST = 'cricbuzz-cricket.p.rapidapi.com';
-const LIVE_STREAM_URL = 'https://me.webcric.com/willow.htm';
+const LIVE_STREAM_URL = 'https://embedsports.top/embed/echo/india-pakistan-t20-asia-cup-cricket2203/1';
 let iplSchedule = [];
 
 // Initialize the application
